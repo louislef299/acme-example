@@ -1,3 +1,13 @@
+---
+menu:
+  main:
+    name: MD
+    identifier: MD
+    weight: 110
+  footer:
+    name: MD
+    weight: 100
+---
 Markdown
 ===========
 
