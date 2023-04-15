@@ -2,16 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Welcome to the website of Acme Corporation, the leading creator of digital shapes on the planet, providing precise shape creations that are ready to use.">
+    {{if $.Description}}
+    <meta name="description" content="{{$.Description}} ">
+    {{end}}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css">
-    <title>Acme Corporation</title>
+    {{$title := default site.Title $.Title}}
+    {{with $title}}
+    <title>{{.}}</title>
+    {{end}}
   </head>
   <body class="home">
     <section>
       <img src="./image/logo.svg" alt="Acme Logo" width="64"/>
-      <h1>Acme Corporation</h1>
-      <h2>Shaping the world for you to live in</h2>
+      {{with $title}}<h1>{{.}}</h1>{{end}}
+      {{if $.Param "subtitle"}}<h2>{{$.Param "subtitle"}}</h2>{{end}}
       <a href="./blog">Explore</a>
     </section>
     <footer>
