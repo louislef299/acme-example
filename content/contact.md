@@ -1,3 +1,9 @@
+---
+menu:
+  footer:
+    name: Contact
+    weight: 300
+---
 Contact Us
 ----------
 
