@@ -13,7 +13,9 @@ Acme Corporation&trade; is the world's leading manufacturer of digital shapes. F
 
 {{< divider >}}
 
+{{< repeat >}}
 We provide :smile: to hundreds of happy customers.
+{{< / repeat >}}
 
 Manufacturing
 --------------
